@@ -51,7 +51,7 @@ addEventListener("load", () => {
 
       column.innerHTML = `
         <div class="column-header member">
-            🗣️ ${member}
+            👤 ${member}
             <span class="tasksCount">0</span>
         </div>
 
