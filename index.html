@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="board">
+        <h2 class="board-title">ITI Task Management</h2>
+        <div class="tasks-columns">
+
+            <div class="column">
+                <div class="column-header">
+                    📋 Tasks Board <span class="tasksCount">0</span>
+                </div>
+                <div class="task-List-container">
+                    <div class="task-creator">
+                        <input type="text" placeholder="Add a task" class="task-input-field">
+                        <input type="submit" value="Add" id="addTaskBtn">
+                    </div>
+                    <div class="tasks-list left-zone">
+                        <!-- Tasks Here -->
+                        <p class="empty-tasks">No Tasks yet, Add tasks here!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

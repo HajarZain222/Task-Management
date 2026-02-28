@@ -1,0 +1,229 @@
+
+/* Root & Reset */
+:root {
+    --main-color: #657EE5;
+    --orange-color: #FD9C0C;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Popup Styling */
+.my-popup {
+    border-radius: 15px;
+    padding: 10px 0px;
+    color: #333;
+    text-align: left !important;
+}
+.popUp-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.popUp-label {
+    display: block;
+    font-size: 14px;
+    color: #888;
+}
+.popUp-input {
+    display: block;
+    width: 93%;
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-size: 15px;
+    margin-left: 0;
+}
+.popUp-btn {
+    display: block;
+    width: 100% !important;
+    background: linear-gradient(to right, #647DE4, #755BAE);
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+}
+.popUp-btn:hover,
+.popUp-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Board Layout */
+.board {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #657EE5, #7263BA);
+    padding: 20px;
+    color: #333;
+}
+.board-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.tasks-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Column Styling */
+.column {
+    width: 280px;
+    min-height: 300px;
+    background-color: #F7FAF9;
+    padding: 10px;
+    border-radius: 10px;
+}
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.column-header .tasksCount {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange-color);
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+}
+.member .tasksCount {
+    background-color: var(--main-color);
+}
+
+/* Task Creator Section */
+.task-List-container .task-creator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+.task-creator input {
+    padding: 8px;
+    border-radius: 5px;
+}
+.task-input-field {
+    flex: 1;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+}
+.task-input-field:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+#addTaskBtn {
+    background-color: var(--orange-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.empty-tasks {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 50px;
+}
+
+/* Drag & Drop Zones */
+.left-zone,
+.drop-zone {
+    padding: 5px;
+    border-radius: 5px;
+}
+.left-zone {
+    min-height: 250px;
+}
+.drop-zone {
+    min-height: 300px;
+}
+.zone-active {
+    border: 1px dashed var(--main-color);
+    background: #E8F0FE;
+}
+
+/* Task Card Styling */
+.task-item {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.task-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Header inside task (title + delete button) */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete Button */
+.del-task-btn {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    background-color: #FF796B;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.del-task-btn:hover {
+    background-color: #ef4444;
+}
+
+/* Status Select Section */
+.select-div {
+    width: 100%;
+    margin-top: 5px;
+}
+.status-select {
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+/* Task Status Colors (Inside Drop Zones Only) */
+.drop-zone .task-item.notSelect {
+    background-color: #FFD0CB;
+    border-left: 3px solid #ef4444;
+}
+.drop-zone .task-item.onGoing {
+    background-color: #7ECAED;
+    border-left: 3px solid #0ea5e9;
+}
+.drop-zone .task-item.finished {
+    background-color: #88E08C;
+    border-left: 3px solid #22c55e;
+}
