@@ -39,8 +39,6 @@ A simple and interactive **task management board** built using **JavaScript, HTM
 - **Backend Integration:** Sync tasks with a server or database.
 - **Multiple Boards:** Allow creating and switching between multiple boards.
 
----
-
 Made with ❤️ for ITI Task Management practice.
 
 ## **Project Structure**
