@@ -40,5 +40,3 @@ A simple and interactive **task management board** built using **JavaScript, HTM
 - **Multiple Boards:** Allow creating and switching between multiple boards.
 
 Made with ❤️ for ITI Task Management practice.
-
-## **Project Structure**
